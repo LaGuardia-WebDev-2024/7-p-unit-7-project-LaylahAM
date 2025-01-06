@@ -5,8 +5,6 @@ void setup() {
 
 //🎯Variable Declarations Go Here
 var fireworkX = 20;
-var x = 200
-var y = 100
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -16,19 +14,12 @@ draw = function(){
    if(mousePressed){
     showXYPositions();
     
-   
   }
   
   //🎯Animation Code Goes Here
-  rect(fireworkX, 15, 10, 10);
-    //Shapes
-    
-    //circle
-    
-    //lines
-   fill(255,250,250);
-    ellipse(245,100,10,10);
-  fireworkX = fireworkX + 1;
+  rect(fireworkX, 150, 160, 100);
+  fill(0,128,0)
+  fireworkX = fireworkX + 3;
 
 }
 
