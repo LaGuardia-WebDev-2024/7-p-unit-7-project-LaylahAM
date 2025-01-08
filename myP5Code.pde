@@ -1,30 +1,31 @@
 //🟢Setup Procedure - Runs Once to Set The Canvas
 void setup() {
     size(400, 400);
-    fill(255,255,255);
-    textSize(57);
-    text("$",75,100);
-    
-    textSize(27);
-    text("$", 100,170)
-    
-    var moneySize30;
-    var ladyX = 10;
+ 
 }
 
 //🎯Variable Declarations Go Here
 var fireworkX = 20;
-
+var moneySize = 30;
+var ladyX = 10;
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
- rect(200, 298 moneySize, moneySize);
+ rect(200, 298, moneySize, moneySize);
  
   background(255,255,255,0);
-  
+     fill(255,255,255);
+    textSize(57);
+    text("$",75,100);
+    
+    textSize(27);
+    text("$", 100,170);
+    
+    
+    
    if(mousePressed){
     showXYPositions();
     
-    MoneySize = moneySize + 3;
+    moneySize = moneySize + 3;
     
   }
   
