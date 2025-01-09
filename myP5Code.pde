@@ -7,10 +7,12 @@ void setup() {
 //🎯Variable Declarations Go Here
 var fireworkX = 20;
 var moneySize = 30;
-var ladyX = 10;
+var randGreen = random(0,255);
+
+
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
- rect(200, 298, moneySize, moneySize);
+
  
   background(255,255,255,0);
      fill(255,255,255);
@@ -20,7 +22,10 @@ draw = function(){
     textSize(27);
     text("$", 100,170);
     
-    
+    rect(170, 150, moneySize, moneySize); 
+
+
+ rect(200, 298, moneySize, moneySize);
     
    if(mousePressed){
     showXYPositions();
