@@ -8,8 +8,8 @@ void setup() {
 var fireworkX = 20;
 var moneySize = 30;
 var randGreen = random(0,255);
-
-
+var money1X = 20
+var money2X= 30
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
 
@@ -35,13 +35,15 @@ draw = function(){
   }
   
   //🎯Animation Code Goes Here
-  rect(fireworkX, 150, 160, 100);
-  fill(0,128,0)
-  fireworkX = fireworkX + 2;
-
- rect(fireworkX, 20, 100, 45);
-  fill(0,128,0)
-  fireworkX = fireworkX + 2;
+  fill(0,randGreen,0)
+  rect(money1X, 150, 160, 100);
+  
+  money1X = money1X + 2;
+  
+fill(0,128,0)
+ rect(money2X, 20, 100, 45);
+  
+ money2X = money2X + 1.5;
   
    rect(fireworkX, 80, 100, 45);
   fill(0,128,0)
